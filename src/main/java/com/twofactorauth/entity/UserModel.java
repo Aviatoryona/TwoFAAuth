@@ -27,7 +27,7 @@ public class UserModel extends BaseEntity{
      * Updated by android device
      */
     @Column(unique = true)
-    String oneSignalId;
+    String oneSignalToken;
 
     /**
      * True : User confirmed
@@ -42,4 +42,10 @@ public class UserModel extends BaseEntity{
      */
     @Column
     Boolean isTwoFactorEnabled;
+
+    /**
+     * false for pending, true for success
+     */
+    @Column
+    Boolean requestStatus;
 }
