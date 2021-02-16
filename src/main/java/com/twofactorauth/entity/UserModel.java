@@ -3,6 +3,7 @@ package com.twofactorauth.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Getter
 @Setter
@@ -48,4 +49,5 @@ public class UserModel extends BaseEntity{
      */
     @Column
     Boolean requestStatus;
+
 }

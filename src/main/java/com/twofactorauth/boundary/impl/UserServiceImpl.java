@@ -62,7 +62,7 @@ public class UserServiceImpl extends AbstractBeanImpl<UserModel,Long> implements
     }
 
     @Override
-    public MessageModel requestStatus(Long id) {
+    public MessageModel requestStatus(Long id) throws Exception{
         Query q= em.createQuery("SELECT u.requestStatus FROM UserModel u WHERE u.id=:id",Boolean.class);
         q.setParameter("id",id);
         Boolean b= (Boolean) q.getSingleResult();
@@ -85,6 +85,14 @@ public class UserServiceImpl extends AbstractBeanImpl<UserModel,Long> implements
         return new MessageModel(
                 true,
                 "Done"
+        );
+    }
+
+    @Override
+    public MessageModel getDefault() {
+        return new MessageModel(
+                false,
+                "No data found"
         );
     }
 }

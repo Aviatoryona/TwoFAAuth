@@ -11,8 +11,8 @@ import io.swagger.v3.oas.annotations.servers.ServerVariable;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "the title",
-                version = "0.0",
+                title = "TwoFAAuth",
+                version = "1.0",
                 description = "My API",
                 license = @License(name = "Apache 2.0", url = "http://www.apache.org/licenses/LICENSE-2.0"),
                 contact = @Contact(url = "https://mail.google.com/", name = "Aviator", email = "aviatoryona67@gmail.com")
@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.servers.ServerVariable;
         servers = {
                 @Server(
                         description = "server 1",
-                        url = "http://localhost:8080/twofaauth",
+                        url = "http://0.0.0.0:8081/TwoFAAuth",
                         variables = {
                                 @ServerVariable(name = "var1", description = "var 1", defaultValue = "1", allowableValues = {"1", "2"}),
                                 @ServerVariable(name = "var2", description = "var 2", defaultValue = "1", allowableValues = {"1", "2"})

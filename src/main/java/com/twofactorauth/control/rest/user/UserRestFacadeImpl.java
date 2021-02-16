@@ -15,37 +15,61 @@ public class UserRestFacadeImpl implements UserRestFacadeI{
 
     @Override
     public MessageModel createUser(UserModel userModel) {
-        UserModel u=userService.create(userModel);
-        return
-                new MessageModel(
-                        u!=null? true:false,
-                        "User created",
-                        u
-                );
+        try {
+            UserModel u = userService.create(userModel);
+            return
+                    new MessageModel(
+                            u != null ? true : false,
+                            "User created",
+                            u
+                    );
+        }catch (Exception e){
+            return userService.getDefault();
+        }
     }
 
     @Override
     public MessageModel getUser(String userName, String pwd) {
-        return userService.getUser(userName,pwd);
+        try {
+            return userService.getUser(userName,pwd);
+        } catch (Exception e) {
+            return userService.getDefault();
+        }
     }
 
     @Override
-    public MessageModel updateToken(Long id, String token) {
-        return userService.updateToken(id,token);
+    public MessageModel updateToken(Long id, String token){
+        try {
+            return userService.updateToken(id,token);
+        } catch (Exception e) {
+            return userService.getDefault();
+        }
     }
 
     @Override
     public MessageModel updateAccess(Long id, boolean isAllowed) {
-        return userService.updateAccess(id,isAllowed);
+        try {
+            return userService.updateAccess(id,isAllowed);
+        } catch (Exception e) {
+            return userService.getDefault();
+        }
     }
 
     @Override
     public MessageModel requestStatus(Long id) {
-        return userService.requestStatus(id);
+        try {
+            return userService.requestStatus(id);
+        } catch (Exception e) {
+            return userService.getDefault();
+        }
     }
 
     @Override
     public MessageModel iniate2FA(Long id, String token) {
-        return userService.iniate2FA(id,token);
+        try {
+            return userService.iniate2FA(id,token);
+        } catch (Exception e) {
+            return userService.getDefault();
+        }
     }
 }
