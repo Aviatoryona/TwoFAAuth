@@ -1,5 +1,8 @@
 package com.twofactorauth.util;
 
+/**
+Aviator 2021
+*/
 public final class StringHelper {
 
     public static String systemIdentifierCode( Object x ) {
