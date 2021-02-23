@@ -14,5 +14,5 @@ Ext.application({
     ],
 
     // The name of the initial view to create.
-    mainView: 'TwoFAuth.view.main.Main'
+    // mainView: 'TwoFAuth.view.login.Login'
 });

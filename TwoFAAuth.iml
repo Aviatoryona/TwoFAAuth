@@ -37,6 +37,24 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/classic/src/fx/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/classic/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/locale/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-base/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-classic/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-classic-sandbox/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-crisp/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-gray/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-material/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-neptune/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-neptune-touch/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/classic/theme-neutral/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/modern/modern/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/packages/font-ios/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/packages/soap/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/.sencha" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/ext/build" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/webapp/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,6 +1,6 @@
 $app-name:  dynamic( 'TwoFAuth' );
-$image-search-path: 'G:/Projects/TwoFAuth/build/development/TwoFAuth/resources';
-$theme-name:  dynamic( 'theme-triton' );
+$image-search-path: '/home/Aviator/Documents/Projects/TwoFAAuth/src/main/webapp/build/development/TwoFAuth/resources';
+$theme-name:  dynamic( 'theme-material' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
@@ -808,6 +808,19 @@ $include-ext-state-stateful: dynamic(true);;
 $include-ext-tab-bar: dynamic(true);;
 $include-ext-tab-panel: dynamic(true);;
 $include-ext-tab-tab: dynamic(true);;
+$include-ext-theme-material: dynamic(true);;
+$include-ext-theme-material-component: dynamic(true);;
+$include-ext-theme-material-button-button: dynamic(true);;
+$include-ext-theme-material-button-split: dynamic(true);;
+$include-ext-theme-material-form-field-checkbox: dynamic(true);;
+$include-ext-theme-material-form-field-radio: dynamic(true);;
+$include-ext-theme-material-form-field-tag: dynamic(true);;
+$include-ext-theme-material-form-field-text: dynamic(true);;
+$include-ext-theme-material-menu-menu: dynamic(true);;
+$include-ext-theme-material-tab-tab: dynamic(true);;
+$include-ext-theme-material-tree-view: dynamic(true);;
+$include-ext-theme-material-view-table: dynamic(true);;
+$include-ext-theme-material-window-messagebox: dynamic(true);;
 $include-ext-theme-neptune-component: dynamic(true);;
 $include-ext-theme-neptune-container-buttongroup: dynamic(true);;
 $include-ext-theme-neptune-form-field-htmleditor: dynamic(true);;
@@ -952,6 +965,8 @@ $include-twofauth-application: dynamic(true);;
 $include-twofauth-model-base: dynamic(true);;
 $include-twofauth-model-personnel: dynamic(true);;
 $include-twofauth-store-personnel: dynamic(true);;
+$include-twofauth-view-login-login: dynamic(true);;
+$include-twofauth-view-login-logincontroller: dynamic(true);;
 $include-twofauth-view-main-list: dynamic(true);;
 $include-twofauth-view-main-main: dynamic(true);;
 $include-twofauth-view-main-maincontroller: dynamic(true);;
@@ -1015,6 +1030,14 @@ $current-package: 'theme-triton';
 $current-resource-root: $theme-triton-resource-root;
 $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/etc/all';
+
+/* including package theme-material */
+$theme-material-resource-root: '' !default;
+$theme-material-resource-path: 'images' !default;
+$current-package: 'theme-material';
+$current-resource-root: $theme-material-resource-root;
+$relative-image-path-for-uis: $theme-material-resource-path;
+@import '../../../../../ext/classic/theme-material/sass/etc/all';
 
 
 /* ======================== VAR ======================== */
@@ -1196,6 +1219,50 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/var/tab/Tab';
 @import '../../../../../ext/classic/theme-triton/sass/var/tab/Bar';
 @import '../../../../../ext/classic/theme-triton/sass/var/tree/View';
+
+/* including package theme-material */
+$theme-material-resource-root: '' !default;
+$theme-material-resource-path: 'images' !default;
+$current-package: 'theme-material';
+$current-resource-root: $theme-material-resource-root;
+$relative-image-path-for-uis: $theme-material-resource-path;
+@import '../../../../../ext/classic/theme-material/sass/var/Component';
+@import '../../../../../ext/classic/theme-material/sass/var/list/TreeItem';
+@import '../../../../../ext/classic/theme-material/sass/var/LoadMask';
+@import '../../../../../ext/classic/theme-material/sass/var/ProgressBar';
+@import '../../../../../ext/classic/theme-material/sass/var/button/Button';
+@import '../../../../../ext/classic/theme-material/sass/var/panel/Tool';
+@import '../../../../../ext/classic/theme-material/sass/var/resizer/Splitter';
+@import '../../../../../ext/classic/theme-material/sass/var/toolbar/Toolbar';
+@import '../../../../../ext/classic/theme-material/sass/var/panel/Panel';
+@import '../../../../../ext/classic/theme-material/sass/var/window/Window';
+@import '../../../../../ext/classic/theme-material/sass/var/form/field/Base';
+@import '../../../../../ext/classic/theme-material/sass/var/form/field/Text';
+@import '../../../../../ext/classic/theme-material/sass/var/window/MessageBox';
+@import '../../../../../ext/classic/theme-material/sass/var/form/field/Checkbox';
+@import '../../../../../ext/classic/theme-material/sass/var/form/FieldSet';
+@import '../../../../../ext/classic/theme-material/sass/var/form/field/Radio';
+@import '../../../../../ext/classic/theme-material/sass/var/view/View';
+@import '../../../../../ext/classic/theme-material/sass/var/picker/Date';
+@import '../../../../../ext/classic/theme-material/sass/var/form/field/Display';
+@import '../../../../../ext/classic/theme-material/sass/var/tip/Tip';
+@import '../../../../../ext/classic/theme-material/sass/var/form/field/Tag';
+@import '../../../../../ext/classic/theme-material/sass/var/form/field/Trigger';
+@import '../../../../../ext/classic/theme-material/sass/var/view/Table';
+@import '../../../../../ext/classic/theme-material/sass/var/grid/header/Container';
+@import '../../../../../ext/classic/theme-material/sass/var/grid/column/Column';
+@import '../../../../../ext/classic/theme-material/sass/var/grid/feature/Grouping';
+@import '../../../../../ext/classic/theme-material/sass/var/grid/feature/RowBody';
+@import '../../../../../ext/classic/theme-material/sass/var/menu/Menu';
+@import '../../../../../ext/classic/theme-material/sass/var/grid/plugin/RowEditing';
+@import '../../../../../ext/classic/theme-material/sass/var/grid/plugin/RowExpander';
+@import '../../../../../ext/classic/theme-material/sass/var/layout/container/Accordion';
+@import '../../../../../ext/classic/theme-material/sass/var/layout/container/Border';
+@import '../../../../../ext/classic/theme-material/sass/var/slider/Multi';
+@import '../../../../../ext/classic/theme-material/sass/var/tab/Tab';
+@import '../../../../../ext/classic/theme-material/sass/var/tab/Bar';
+@import '../../../../../ext/classic/theme-material/sass/var/toolbar/Breadcrumb';
+@import '../../../../../ext/classic/theme-material/sass/var/tree/View';
 
 
 /* ======================== RULE ======================== */
@@ -1402,7 +1469,41 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/src/toolbar/Breadcrumb';
 @import '../../../../../ext/classic/theme-triton/sass/src/window/Toast';
 
-/* including scss file adjacent to ..\..\..\..\..\app\Application.js */
+/* including package theme-material */
+$theme-material-resource-root: '' !default;
+$theme-material-resource-path: 'images' !default;
+$current-package: 'theme-material';
+$current-resource-root: $theme-material-resource-root;
+$relative-image-path-for-uis: $theme-material-resource-path;
+@import '../../../../../ext/classic/theme-material/sass/src/Component';
+@import '../../../../../ext/classic/theme-material/sass/src/ProgressBar';
+@import '../../../../../ext/classic/theme-material/sass/src/button/Button';
+@import '../../../../../ext/classic/theme-material/sass/src/panel/Tool';
+@import '../../../../../ext/classic/theme-material/sass/src/toolbar/Toolbar';
+@import '../../../../../ext/classic/theme-material/sass/src/layout/component/Dock';
+@import '../../../../../ext/classic/theme-material/sass/src/window/Window';
+@import '../../../../../ext/classic/theme-material/sass/src/form/field/Text';
+@import '../../../../../ext/classic/theme-material/sass/src/form/field/Checkbox';
+@import '../../../../../ext/classic/theme-material/sass/src/form/FieldSet';
+@import '../../../../../ext/classic/theme-material/sass/src/form/field/Radio';
+@import '../../../../../ext/classic/theme-material/sass/src/view/View';
+@import '../../../../../ext/classic/theme-material/sass/src/picker/Date';
+@import '../../../../../ext/classic/theme-material/sass/src/tip/Tip';
+@import '../../../../../ext/classic/theme-material/sass/src/form/field/Tag';
+@import '../../../../../ext/classic/theme-material/sass/src/panel/Table';
+@import '../../../../../ext/classic/theme-material/sass/src/view/Table';
+@import '../../../../../ext/classic/theme-material/sass/src/grid/column/Column';
+@import '../../../../../ext/classic/theme-material/sass/src/grid/column/Check';
+@import '../../../../../ext/classic/theme-material/sass/src/menu/Menu';
+@import '../../../../../ext/classic/theme-material/sass/src/grid/plugin/Editing';
+@import '../../../../../ext/classic/theme-material/sass/src/grid/plugin/RowEditing';
+@import '../../../../../ext/classic/theme-material/sass/src/grid/plugin/RowExpander';
+@import '../../../../../ext/classic/theme-material/sass/src/slider/Multi';
+@import '../../../../../ext/classic/theme-material/sass/src/tab/Tab';
+@import '../../../../../ext/classic/theme-material/sass/src/tree/View';
+@import '../../../../../ext/classic/theme-material/sass/src/view/MultiSelector';
+
+/* including scss file adjacent to ../../../../../app/Application.js */
 $default-resource-root: '' !default;
 $default-resource-path: 'images' !default;
 $current-package: false;
@@ -1410,7 +1511,7 @@ $current-resource-root: $default-resource-root;
 $relative-image-path-for-uis: $default-resource-path;
 @import '../../../../../app/Application';
 
-/* including scss file adjacent to ..\..\..\..\..\app\view\main\Main.js */
+/* including scss file adjacent to ../../../../../app/view/main/Main.js */
 $default-resource-root: '' !default;
 $default-resource-path: 'images' !default;
 $current-package: false;

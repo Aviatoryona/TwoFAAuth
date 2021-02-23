@@ -2355,6 +2355,11 @@ Ext.Microloader = Ext.Microloader || (function () {
                           _debug("Application has enabled AppCache but it is not supported by this browser");
                         return;
                     }
+
+                    // If cache retrieval didn't throw an exception but cache is still not valid, bail
+                    if (!_cache) {
+                        return;
+                    }
                 }
 
                 if (_cache.status === _cache.UPDATEREADY || _cache.status === _cache.OBSOLETE) {

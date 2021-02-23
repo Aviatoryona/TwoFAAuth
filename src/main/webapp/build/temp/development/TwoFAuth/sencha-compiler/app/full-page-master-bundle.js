@@ -1,2 +1,2 @@
 // @tag full-page
-// @require G:\Projects\TwoFAuth\app.js
+// @require /home/Aviator/Documents/Projects/TwoFAAuth/src/main/webapp/app.js

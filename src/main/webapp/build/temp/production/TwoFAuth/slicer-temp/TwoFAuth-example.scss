@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'TwoFAuth' );
-$image-search-path: 'G:/Projects/TwoFAuth/build/production/TwoFAuth/resources';
+$image-search-path: '/home/Aviator/Documents/Projects/TwoFAAuth/src/main/webapp/build/production/TwoFAuth/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -1401,7 +1401,7 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/src/toolbar/Breadcrumb';
 @import '../../../../../ext/classic/theme-triton/sass/src/window/Toast';
 
-/* including scss file adjacent to ..\..\..\..\..\app\Application.js */
+/* including scss file adjacent to ../../../../../app/Application.js */
 $default-resource-root: '' !default;
 $default-resource-path: 'images' !default;
 $current-package: false;
@@ -1409,7 +1409,7 @@ $current-resource-root: $default-resource-root;
 $relative-image-path-for-uis: $default-resource-path;
 @import '../../../../../app/Application';
 
-/* including scss file adjacent to ..\..\..\..\..\app\view\main\Main.js */
+/* including scss file adjacent to ../../../../../app/view/main/Main.js */
 $default-resource-root: '' !default;
 $default-resource-path: 'images' !default;
 $current-package: false;
